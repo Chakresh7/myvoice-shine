@@ -11,38 +11,38 @@ const cards = [
 ];
 
 const WhoSection = () => (
-  <section className="py-24 px-6">
+  <section className="py-28 px-6">
     <div className="container mx-auto max-w-[1100px]">
       <ScrollReveal>
-        <p className="text-xs uppercase tracking-[0.2em] opacity-30 mb-4 font-heading">For You If</p>
-        <h2 className="font-heading font-bold text-[32px] md:text-[48px] leading-tight mb-16">
+        <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-5 font-heading">For You If</p>
+        <h2 className="font-heading font-bold text-[30px] md:text-[46px] leading-[1.1] mb-16 tracking-[-0.01em]">
           Built for India's 170M<br className="hidden md:block" /> LinkedIn professionals.
         </h2>
       </ScrollReveal>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {cards.slice(0, 3).map((c, i) => (
           <ScrollReveal key={i} delay={i * 0.08} className={i === 0 ? "col-span-2" : ""}>
-            <div className="glass-card glass-card-shimmer relative p-6 h-full">
-              <div className="text-2xl mb-3">{c.emoji}</div>
-              <h3 className="font-heading font-bold text-base mb-1">{c.title}</h3>
-              <p className="text-[13px] opacity-50 font-body">{c.desc}</p>
+            <div className="glass-card glass-card-shimmer relative p-6 h-full group">
+              <div className="text-2xl mb-3 grayscale group-hover:grayscale-0 transition-all duration-300">{c.emoji}</div>
+              <h3 className="font-heading font-bold text-[15px] mb-1.5 opacity-90">{c.title}</h3>
+              <p className="text-[12px] opacity-40 font-body leading-relaxed">{c.desc}</p>
             </div>
           </ScrollReveal>
         ))}
         {cards.slice(3).map((c, i) => (
           <ScrollReveal key={i + 3} delay={(i + 3) * 0.08}>
-            <div className="glass-card glass-card-shimmer relative p-5 h-full">
-              <div className="text-xl mb-2">{c.emoji}</div>
-              <h3 className="font-heading font-bold text-sm mb-1">{c.title}</h3>
-              <p className="text-[12px] opacity-50 font-body">{c.desc}</p>
+            <div className="glass-card glass-card-shimmer relative p-5 h-full group">
+              <div className="text-lg mb-2 grayscale group-hover:grayscale-0 transition-all duration-300">{c.emoji}</div>
+              <h3 className="font-heading font-bold text-[13px] mb-1 opacity-90">{c.title}</h3>
+              <p className="text-[11px] opacity-40 font-body leading-relaxed">{c.desc}</p>
             </div>
           </ScrollReveal>
         ))}
       </div>
 
       <ScrollReveal delay={0.5}>
-        <p className="text-center mt-14 italic opacity-50 font-body text-[15px] max-w-[550px] mx-auto">
+        <p className="text-center mt-16 italic opacity-40 font-body text-[14px] max-w-[520px] mx-auto leading-relaxed">
           "If you're on LinkedIn and want daily presence without the daily grind — this is ₹99 well spent."
         </p>
       </ScrollReveal>
