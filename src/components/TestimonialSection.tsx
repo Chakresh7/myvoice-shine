@@ -15,7 +15,7 @@ const TestimonialSection = () => (
           <div className="absolute -top-20 -right-20 w-[200px] h-[200px] rounded-full bg-white/[0.02] blur-[80px] pointer-events-none" />
           <span className="absolute top-4 left-8 text-[100px] opacity-[0.04] font-heading leading-none select-none">"</span>
           <blockquote className="font-body text-[19px] md:text-[22px] leading-[1.7] opacity-70 mb-8 relative z-10 max-w-[700px]">
-            "I dropped 10 thoughtful comments today in under 15 minutes. My notifications are insane right now."
+            "I dropped <span className="text-radium/80">10 thoughtful comments</span> today in under 15 minutes. My notifications are insane right now."
           </blockquote>
           <p className="font-heading font-semibold text-[13px] opacity-40 tracking-wide">
             Chakresh Kumar · 20-year-old founder · Ahmedabad, Gujarat

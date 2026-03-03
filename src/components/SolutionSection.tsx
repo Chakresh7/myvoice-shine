@@ -13,7 +13,7 @@ const SolutionSection = () => (
       <ScrollReveal>
         <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-5 font-heading">The Solution</p>
         <h2 className="font-heading font-bold text-[30px] md:text-[46px] leading-[1.1] mb-16 tracking-[-0.01em]">
-          From post to comment<br className="hidden md:block" /> in under 10 seconds.
+          From post to comment<br className="hidden md:block" /> in under <span className="text-radium">10 seconds.</span>
         </h2>
       </ScrollReveal>
 

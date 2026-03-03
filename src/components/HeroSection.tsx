@@ -15,13 +15,13 @@ const HeroSection = () => (
 
       <ScrollReveal delay={0.1}>
         <h1 className="font-heading font-extrabold text-[42px] md:text-[72px] lg:text-[82px] leading-[1.02] mb-7 tracking-[-0.02em]">
-          Your Voice.<br />Their Feed.<br />Every Day.
+          <span className="text-radium">Your Voice.</span><br />Their Feed.<br />Every Day.
         </h1>
       </ScrollReveal>
 
       <ScrollReveal delay={0.2}>
         <p className="text-[16px] md:text-[18px] leading-[1.75] opacity-40 max-w-[580px] mx-auto mb-10 font-body">
-          Scan any LinkedIn post. Get 3 authentic comment drafts written in YOUR exact tone — practical, direct, real. Tweak one word. Post in 10 seconds.
+          Scan any LinkedIn post. Get <span className="text-radium/70">3 authentic comment drafts</span> written in YOUR exact tone — practical, direct, real. Tweak one word. Post in 10 seconds.
         </p>
       </ScrollReveal>
 

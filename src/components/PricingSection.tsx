@@ -25,7 +25,7 @@ const PricingSection = () => {
             <div className="glass-card p-8 h-full relative" style={{ borderColor: "rgba(255,255,255,0.18)" }}>
               <span className="glass-pill !text-[9px] absolute top-4 right-4 uppercase tracking-[0.2em] font-heading font-bold">Popular</span>
               <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-3 font-heading">Early Bird</p>
-              <div className="font-heading font-extrabold text-[48px] mb-6 tracking-[-0.02em]">₹99<span className="text-base font-normal opacity-30 ml-1">/mo</span></div>
+              <div className="font-heading font-extrabold text-[48px] mb-6 tracking-[-0.02em]"><span className="text-radium">₹99</span><span className="text-base font-normal opacity-30 ml-1">/mo</span></div>
               <ul className="space-y-3 font-body text-[13px] opacity-50">
                 <li>✓ Unlimited comments</li>
                 <li>✓ 3 voice variations</li>
