@@ -28,7 +28,7 @@ const ChaiSection = () => (
             <div className="space-y-3 font-body text-[14px] opacity-40 leading-relaxed">
               <p>Monthly: <span className="opacity-100 font-semibold">₹99 early bird</span></p>
               <p>Comments: <span className="opacity-100 font-semibold">Unlimited</span></p>
-              <p className="pt-3 border-t border-white/[0.06]">Result: <span className="italic opacity-70">10–30× more reach, replies, profile views, DMs, leads</span></p>
+              <p className="pt-3 border-t border-white/[0.06]">Result: <span className="italic text-radium/70">10–30× more reach, replies, profile views, DMs, leads</span></p>
             </div>
           </div>
         </ScrollReveal>

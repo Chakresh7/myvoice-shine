@@ -32,7 +32,7 @@ const ProblemSection = () => (
       <ScrollReveal delay={0.4}>
         <div className="section-divider mt-16 mb-6" />
         <p className="text-center font-heading font-semibold text-[17px] opacity-60">
-          Sound familiar? You're not lazy. The process is just broken.
+          Sound familiar? You're not lazy. <span className="text-radium">The process is just broken.</span>
         </p>
       </ScrollReveal>
     </div>

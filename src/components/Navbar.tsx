@@ -17,7 +17,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="#" className="font-heading font-bold text-[17px] tracking-[-0.02em]">
-          MyVoice <span className="opacity-40">✦</span>
+          MyVoice <span className="text-radium/60">✦</span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-[13px] opacity-60 font-body">
           <a href="#how-it-works" className="hover:opacity-100 transition-opacity duration-300">How it works</a>
