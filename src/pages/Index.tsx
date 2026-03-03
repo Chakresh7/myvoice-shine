@@ -16,10 +16,15 @@ const Index = () => (
     <HeroSection />
     <SocialProofBar />
     <ProblemSection />
+    <div className="section-divider" />
     <SolutionSection />
+    <div className="section-divider" />
     <ChaiSection />
+    <div className="section-divider" />
     <WhoSection />
+    <div className="section-divider" />
     <TestimonialSection />
+    <div className="section-divider" />
     <PricingSection />
     <Footer />
   </>

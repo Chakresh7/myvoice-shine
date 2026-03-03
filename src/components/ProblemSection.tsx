@@ -8,29 +8,30 @@ const problems = [
 ];
 
 const ProblemSection = () => (
-  <section className="py-24 px-6">
+  <section className="py-28 px-6">
     <div className="container mx-auto max-w-[1100px]">
       <ScrollReveal>
-        <p className="text-xs uppercase tracking-[0.2em] opacity-30 mb-4 font-heading">The Problem</p>
-        <h2 className="font-heading font-bold text-[32px] md:text-[48px] leading-tight mb-16">
+        <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-5 font-heading">The Problem</p>
+        <h2 className="font-heading font-bold text-[30px] md:text-[46px] leading-[1.1] mb-16 tracking-[-0.01em]">
           LinkedIn is exhausting when<br className="hidden md:block" /> you do it manually.
         </h2>
       </ScrollReveal>
 
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-4">
         {problems.map((p, i) => (
           <ScrollReveal key={i} delay={i * 0.1}>
-            <div className="glass-card glass-card-shimmer relative p-7 h-full">
-              <div className="text-2xl mb-4">{p.icon}</div>
-              <h3 className="font-heading font-bold text-lg mb-2">{p.title}</h3>
-              <p className="text-[15px] opacity-50 font-body leading-relaxed">{p.desc}</p>
+            <div className="glass-card glass-card-shimmer relative p-7 h-full group">
+              <div className="text-2xl mb-4 grayscale group-hover:grayscale-0 transition-all duration-300">{p.icon}</div>
+              <h3 className="font-heading font-bold text-[17px] mb-2.5 opacity-90">{p.title}</h3>
+              <p className="text-[14px] opacity-40 font-body leading-[1.7]">{p.desc}</p>
             </div>
           </ScrollReveal>
         ))}
       </div>
 
       <ScrollReveal delay={0.4}>
-        <p className="text-center mt-14 font-heading font-semibold text-lg opacity-70">
+        <div className="section-divider mt-16 mb-6" />
+        <p className="text-center font-heading font-semibold text-[17px] opacity-60">
           Sound familiar? You're not lazy. The process is just broken.
         </p>
       </ScrollReveal>

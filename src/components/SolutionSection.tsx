@@ -8,29 +8,29 @@ const steps = [
 ];
 
 const SolutionSection = () => (
-  <section id="how-it-works" className="py-24 px-6">
+  <section id="how-it-works" className="py-28 px-6">
     <div className="container mx-auto max-w-[1100px]">
       <ScrollReveal>
-        <p className="text-xs uppercase tracking-[0.2em] opacity-30 mb-4 font-heading">The Solution</p>
-        <h2 className="font-heading font-bold text-[32px] md:text-[48px] leading-tight mb-16">
+        <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-5 font-heading">The Solution</p>
+        <h2 className="font-heading font-bold text-[30px] md:text-[46px] leading-[1.1] mb-16 tracking-[-0.01em]">
           From post to comment<br className="hidden md:block" /> in under 10 seconds.
         </h2>
       </ScrollReveal>
 
-      <div className="grid md:grid-cols-4 gap-5 relative">
+      <div className="grid md:grid-cols-4 gap-4 relative">
         {/* Connecting line */}
-        <div className="hidden md:block absolute top-1/2 left-0 right-0 border-t border-dashed border-white/10 -translate-y-1/2 z-0" />
+        <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] border-t border-dashed border-white/[0.06] -translate-y-1/2 z-0" />
 
         {steps.map((s, i) => (
           <ScrollReveal key={i} delay={i * 0.12}>
-            <div className="glass-card glass-card-shimmer relative p-6 text-center h-full z-10">
-              <span className="font-heading text-[64px] font-extrabold opacity-[0.04] absolute top-2 left-1/2 -translate-x-1/2 select-none">
+            <div className="glass-card glass-card-shimmer relative p-6 text-center h-full z-10 group">
+              <span className="font-heading text-[72px] font-extrabold opacity-[0.03] absolute top-0 left-1/2 -translate-x-1/2 select-none group-hover:opacity-[0.06] transition-opacity duration-500">
                 {s.num}
               </span>
               <div className="relative z-10">
-                <span className="font-heading font-bold text-sm opacity-40 block mb-6">{s.num}</span>
-                <h3 className="font-heading font-bold text-base mb-3">{s.title}</h3>
-                <p className="text-[14px] opacity-50 font-body leading-relaxed">{s.desc}</p>
+                <span className="font-heading font-bold text-[11px] opacity-30 block mb-7 tracking-[0.15em]">{s.num}</span>
+                <h3 className="font-heading font-bold text-[15px] mb-3 opacity-90">{s.title}</h3>
+                <p className="text-[13px] opacity-40 font-body leading-[1.7]">{s.desc}</p>
               </div>
             </div>
           </ScrollReveal>
