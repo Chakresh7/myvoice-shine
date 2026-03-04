@@ -71,6 +71,7 @@ const PricingSection = () => {
       });
       setSubmitted(true);
       setForm({ name: "", email: "", linkedin: "", challenge: "" });
+      setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
       console.error("Firestore error:", err);
       setError("Something went wrong. Please try again.");
