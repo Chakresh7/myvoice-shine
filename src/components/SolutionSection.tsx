@@ -11,7 +11,7 @@ const SolutionSection = () => (
   <section id="how-it-works" className="py-28 px-6">
     <div className="container mx-auto max-w-[1100px]">
       <ScrollReveal>
-        <p className="text-[10px] uppercase tracking-[0.25em] opacity-25 mb-5 font-heading">The Solution</p>
+        <p className="text-[10px] uppercase tracking-[0.25em] opacity-55 mb-5 font-heading">The Solution</p>
         <h2 className="font-heading font-bold text-[30px] md:text-[46px] leading-[1.1] mb-16 tracking-[-0.01em]">
           From post to comment<br className="hidden md:block" /> in under <span className="text-radium">10 seconds.</span>
         </h2>
@@ -24,13 +24,13 @@ const SolutionSection = () => (
         {steps.map((s, i) => (
           <ScrollReveal key={i} delay={i * 0.12}>
             <div className="glass-card glass-card-shimmer relative p-6 text-center h-full z-10 group">
-              <span className="font-heading text-[72px] font-extrabold opacity-[0.03] absolute top-0 left-1/2 -translate-x-1/2 select-none group-hover:opacity-[0.06] transition-opacity duration-500">
+              <span className="font-heading text-[72px] font-extrabold opacity-[0.03] absolute top-0 left-1/2 -translate-x-1/2 select-none group-hover:opacity-[0.45] group-hover:text-radium transition-all duration-500">
                 {s.num}
               </span>
               <div className="relative z-10">
-                <span className="font-heading font-bold text-[11px] opacity-30 block mb-7 tracking-[0.15em]">{s.num}</span>
+                <span className="font-heading font-bold text-[11px] opacity-60 block mb-7 tracking-[0.15em]">{s.num}</span>
                 <h3 className="font-heading font-bold text-[15px] mb-3 opacity-90">{s.title}</h3>
-                <p className="text-[13px] opacity-40 font-body leading-[1.7]">{s.desc}</p>
+                <p className="text-[13px] opacity-70 font-body leading-[1.7]">{s.desc}</p>
               </div>
             </div>
           </ScrollReveal>
